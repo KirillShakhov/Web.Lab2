@@ -1,0 +1,12 @@
+https://www.youtube.com/watch?v=licQZlIenAk
+https://ru.wikipedia.org/wiki/Model-View-Controller
+https://netbeans.org/kb/docs/web/ajax-quickstart_ru.html#client1
+https://webdevblog.ru/kak-rabotaet-javascript/
+https://asbnotebook.com/2018/10/21/jquery-ajax-example-with-servlet/
+https://colorlib.com/wp/free-404-error-page-templates/
+https://www.demis.ru/articles/adaptivnyj-dizain-saita/
+http://www.websphererus.com/development/introducing-to-jsf
+https://proselyte.net/tutorials/servlets/life-cycle/#
+https://medium.com/javascript-in-plain-english/how-to-detect-a-sequence-of-keystrokes-in-javascript-83ec6ffd8e93
+https://stackoverflow.com/questions/43172115/get-the-mouse-coordinates-when-clicking-on-canvas
+http://javastudy.ru/interview/jee-jsp-questions-answers/
