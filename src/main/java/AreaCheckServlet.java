@@ -1,7 +1,10 @@
 import javax.servlet.ServletException;
 import javax.servlet.http.*;
-import java.util.*;
-import java.io.*;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 public class AreaCheckServlet extends HttpServlet {
 
