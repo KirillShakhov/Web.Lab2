@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
             x = position.x;
             y = position.y;
             setPointer(x, y);
-            let k = 360 / r; //отношение радиуса и плоскости
+            let k = 270 / r; //отношение радиуса и плоскости
             x = (x / k).toFixed(1);
             y = (y / k).toFixed(1);
             sendRequest("svg");
