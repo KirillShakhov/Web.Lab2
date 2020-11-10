@@ -5,7 +5,7 @@ public class Point implements Serializable {
 
     private double x, y, r;
     private boolean coordsStatus;
-    public static final long serialVersionUID = 4L;
+    public static final long serialVersionUID = 5L;
 
     public Point(double x, double y, double r) {
         this.x = x;
