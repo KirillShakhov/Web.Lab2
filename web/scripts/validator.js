@@ -30,11 +30,21 @@ function sendRequest(key) {
     const keys = ["button", "svg"];
     if (keys.includes(key)) {
         let request = "x=" + encodeURIComponent(x) + "&y=" + encodeURIComponent(y) + "&r=" + encodeURIComponent(r) +
-            "&key=" + encodeURIComponent(key);
-        fetch("app", {
-            method: "POST",
-            headers: {"Content-Type": "application/x-www-form-urlencoded; charset=UTF-8"},
-            body: request
+            "&key=" + encodeURIComponent(key) + "&hit=" + true;
+        // fetch("app", {
+        //     method: "GET",
+        //     headers: {"Content-Type": "application/x-www-form-urlencoded; charset=UTF-8"},
+        //     body: request
+        // }).then(response => response.text()).then(function (serverAnswer) {
+        //     document.getElementById("outputContainer").innerHTML = serverAnswer;
+        // }).catch(err => createNotification(`Ошибка HTTP ${err.textContent}. Повторите попытку позже.`));
+
+
+        fetch("./app?x=" + encodeURI(x) + "&y=" + encodeURI(y) + "&r=" + encodeURI(r) + "&key=" + encodeURI(key), {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'text/plain;charset=UTF-8'
+            }
         }).then(response => response.text()).then(function (serverAnswer) {
             document.getElementById("outputContainer").innerHTML = serverAnswer;
         }).catch(err => createNotification(`Ошибка HTTP ${err.textContent}. Повторите попытку позже.`));
@@ -89,7 +99,8 @@ function validateR() {
     }
     if(!(r>0 & r < 15)){
         createNotification("Значение R не выбрано");
-        return false;
+        return false
+
 
     }
     else{
