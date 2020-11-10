@@ -71,16 +71,16 @@
       1<input type="checkbox" name="radius" autocomplete="off" class="rb" id="r_1" value="1" my-title="1">
     </td>
     <td>
-      1.5<input type="checkbox" name="radius" class="rb" autocomplete="off" id="r_1_5" value="1.5" my-title="1.5">
+      2<input type="checkbox" name="radius" class="rb" autocomplete="off" id="r_2" value="2" my-title="2">
     <td>
-      2<input type="checkbox" name="radius" class="rb" id="r_2" autocomplete="off" value="2" my-title="2">
+      3<input type="checkbox" name="radius" class="rb" id="r_3" autocomplete="off" value="3" my-title="3">
     </td>
   </tr>
   <tr>
     <td>
-      2.5<input type="checkbox" name="radius" class="rb" id="r_2_5" value="2.5" autocomplete="off" my-title="2.5">
+      4<input type="checkbox" name="radius" class="rb" id="r_4" value="4" autocomplete="off" my-title="4">
     <td>
-      3<input type="checkbox" name="radius" class="rb" id="r_3" value="3" autocomplete="off" my-title="3">
+      5<input type="checkbox" name="radius" class="rb" id="r_5" value="5" autocomplete="off" my-title="5">
     </td>
   </tr>
 
