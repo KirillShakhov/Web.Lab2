@@ -10,8 +10,8 @@
 <body>
 <header class="header">
   <h1>Веб-программирование, Лаб. 2, Вариант 282301</h1>
-  <h2 align="left">Шахов Кирилл Андревич</h2>
-  <h2>Федоров Никита Сергеевич</h2>
+  <h2 align="left">Шахов Кирилл Андревич(back)</h2>
+  <h2>Федоров Никита Сергеевич(front)</h2>
 </header>
 <table id="mainTable" class="shaded">
   <thead><td colspan="5"><h3>Валидация введённых значений:</h3></td></thead>

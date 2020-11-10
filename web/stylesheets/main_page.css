@@ -42,7 +42,7 @@ thead * {margin-top: 4%}
 
 input, svg {
     width: 100%;
-    border: 2px solid #f41c52;
+    border: 2px solid black;
     border-radius: 20px;
     background-color: white;
 }
@@ -105,7 +105,8 @@ hr {
     border-radius: 15%;
 }
 
-.errorStub {background-color: #dc143b}
+.errorStub {background-color: #dc143b
+}
 
 #outputTable {
     border: 1px solid #000720;
