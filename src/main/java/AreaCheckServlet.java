@@ -41,7 +41,7 @@ public class AreaCheckServlet extends HttpServlet {
     private boolean checkData(double x, double y, double r, String key) {
         Double[] xInterval = {-2.0, -1.5, -1.0, -0.5, 0.0, 0.5, 1.0, 1.5, 2.0};
         if (key.equals("button"))
-            return (Arrays.asList(xInterval).contains(x) && (y > -5 && y < 3) && (r > 0 && r < 9999));
+            return (Arrays.asList(xInterval).contains(x) && (y > -3 && y < 5) && (r > 0 && r < 9999));
         else if (key.equals("svg")) return (r > 0 && r < 9999);
         else return false;
     }

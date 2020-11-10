@@ -72,18 +72,18 @@ figcaption {font-size: 0.8em}
     color: white;
 }
 
-.shaded {box-shadow: 0 0 10px 1px black}
+/*.shaded {box-shadow: 0 0 10px 1px black}*/
 
-.shaded:hover, .animated:hover {transition: 0.5s}
+/*.shaded:hover, .animated:hover {transition: 0.5s}*/
 
-.shaded:hover {box-shadow: 0 0 20px 2px black}
+/*.shaded:hover {box-shadow: 0 0 20px 2px black}*/
 
-.animated:hover {transform: scale(1.05)}
+/*.animated:hover {transform: scale(1.05)}*/
 
-.illuminated:hover, .illuminated:focus {
-    box-shadow: 0 0 40px 5px #f41c52;
-    outline: none; /*убирает рамку фокуса в chrome*/
-}
+/*.illuminated:hover, .illuminated:focus {*/
+/*    box-shadow: 0 0 40px 5px #f41c52;*/
+/*    outline: none; !*убирает рамку фокуса в chrome*!*/
+/*}*/
 
 hr {
     color: #f41c52;

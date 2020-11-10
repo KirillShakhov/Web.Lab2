@@ -15,7 +15,6 @@ document.addEventListener("DOMContentLoaded", () => {
                 element.style.backgroundColor = null;
                 element.style.color = null;
             });
-            this.style.boxShadow = "0 0 40px 5px #f41c52";
             this.style.backgroundColor = "#f41c52";
             this.style.color = "white";
         }
@@ -73,7 +72,7 @@ function validateY() {
     } else if (!isNumeric(y)) {
         createNotification("y не число");
         return false;
-    } else if (!((y > -5) && (y < 3))) {
+    } else if (!((y > -3) && (y < 5))) {
         createNotification("y не входит в область допустимых значений");
         return false;
     } else return true;

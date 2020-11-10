@@ -71,55 +71,27 @@
   <tr>
     <td rowspan="2">Выберите R:</td>
     <td>
-      1
-      <input name="R-radio-group" class="illuminated animated" type="radio" value="1"></td>
+      1<input type="checkbox" name="radius" autocomplete="off" class="rb" id="r_1" value="1" my-title="1">
+    </td>
     <td>
-      2
-      <input name="R-radio-group" class="illuminated animated" type="radio" value="2"></td>
+      1.5<input type="checkbox" name="radius" class="rb" autocomplete="off" id="r_1_5" value="1.5" my-title="1.5">
     <td>
-      3
-      <input name="R-radio-group" class="illuminated animated" type="radio" value="3"></td>
+      2<input type="checkbox" name="radius" class="rb" id="r_2" autocomplete="off" value="2" my-title="2">
     </td>
   </tr>
   <tr>
     <td>
-      4
-      <input name="R-radio-group" class="illuminated animated" type="radio" value="4"></td>
+      2.5<input type="checkbox" name="radius" class="rb" id="r_2_5" value="2.5" autocomplete="off" my-title="2.5">
     <td>
-      5
-      <input name="R-radio-group" class="illuminated animated" type="radio" value="5"></td>
-  </tr>
-
-
-
-
-
-
-
-
-
-  <tr>
-    <td>
-      1
-      <input type="checkbox" name="radius" autocomplete="off" class="rb" id="r_1" value="1" my-title="1">
-    </td>
-    <td>
-      1.5
-      <input type="checkbox" name="radius" class="rb" autocomplete="off" id="r_1_5" value="1.5" my-title="1.5">
-    </td>
-    <td>
-      2
-      <input type="checkbox" name="radius" class="rb" id="r_2" autocomplete="off" value="2" my-title="2">
-    </td>
-    <td>
-      2.5
-      <input type="checkbox" name="radius" class="rb" id="r_2_5" value="2.5" autocomplete="off" my-title="2.5">
-    </td>
-    <td>
-      3
-      <input type="checkbox" name="radius" class="rb" id="r_3" value="3" autocomplete="off" my-title="3">
+      3<input type="checkbox" name="radius" class="rb" id="r_3" value="3" autocomplete="off" my-title="3">
     </td>
   </tr>
+
+
+
+
+
+
 
 
 
