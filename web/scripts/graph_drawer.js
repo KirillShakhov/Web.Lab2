@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
             x = position.x;
             y = position.y;
             setPointer(position.x_draw, position.y_draw);
-            let k = 270 / r; //отношение радиуса и плоскости
+            let k = 120/ r; //отношение радиуса и плоскости
             x = (x / k).toFixed(1);
             y = (y / k).toFixed(1);
 
