@@ -13,10 +13,8 @@
 <body>
 <header class="shaded animated">
   <h1>Веб-программирование, Лаб. 2, Вариант 212301</h1>
-  <div id="credit">
-    <img src="images/avatar.png" align="middle" alt="Аватар разработчика">
-    <a href="https://github.com/testpassword" class="illuminated animated" title="Перейти к профилю Github разработчика">Кульбако Артемий Юрьевич, P3212</a>
-  </div>
+  <h2>Шахов Кирилл Андревич</h2>
+  <h2>Фёдоров Никита</h2>
 </header>
 <table id="mainTable" class="shaded">
   <thead><td colspan="5"><h3>Валидация введённых значений:</h3></td></thead>
