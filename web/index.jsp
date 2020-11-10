@@ -2,19 +2,16 @@
 <!DOCTYPE HTML>
 <html lang="ru-RU">
 <head>
-  <meta name="description" content="Лабораторная работа №2 по дисциплине веб-программирование.">
-  <meta name="author" content="Кульбако Артемий Юрьевич">
-  <meta name="keywords" content="ВТ, Лабораторная работа, Веб-программирование, Институт Тёплых Мужскин Отношений"/>
   <link href="stylesheets/main_page.css" rel="stylesheet">
   <link href="stylesheets/check_button.css" rel="stylesheet">
   <link rel="icon" type="image/jpg" href="images/favicon.jpg">
-  <title>Лабораторная №1</title>
+  <title>Лабораторная №2</title>
 </head>
 <body>
-<header class="shaded animated">
-  <h1>Веб-программирование, Лаб. 2, Вариант 212301</h1>
-  <h2>Шахов Кирилл Андревич</h2>
-  <h2>Фёдоров Никита</h2>
+<header class="header">
+  <h1>Веб-программирование, Лаб. 2, Вариант 282301</h1>
+  <h2 align="left">Шахов Кирилл Андревич</h2>
+  <h2>Федоров Никита Сергеевич</h2>
 </header>
 <table id="mainTable" class="shaded">
   <thead><td colspan="5"><h3>Валидация введённых значений:</h3></td></thead>
@@ -70,20 +67,20 @@
   </tr>
   <tr>
     <td rowspan="2">Выберите R:</td>
-    <td>
-      1<input type="checkbox" name="radius" autocomplete="off" class="rb" id="r_1" value="1" my-title="1">
+    <td >
+      1<input type="checkbox" name="radius" autocomplete="off" class="illuminated animated" id="r_1" value="1" my-title="1">
     </td>
     <td>
-      1.5<input type="checkbox" name="radius" class="rb" autocomplete="off" id="r_1_5" value="1.5" my-title="1.5">
+      1.5<input type="checkbox" name="radius" class="illuminated animated" autocomplete="off" id="r_1_5" value="1.5" my-title="1.5">
     <td>
-      2<input type="checkbox" name="radius" class="rb" id="r_2" autocomplete="off" value="2" my-title="2">
+      2<input type="checkbox" name="radius" class="illuminated animated" id="r_2" autocomplete="off" value="2" my-title="2">
     </td>
   </tr>
   <tr>
     <td>
-      2.5<input type="checkbox" name="radius" class="rb" id="r_2_5" value="2.5" autocomplete="off" my-title="2.5">
+      2.5<input type="checkbox" name="radius" class="illuminated animated" id="r_2_5" value="2.5" autocomplete="off" my-title="2.5">
     <td>
-      3<input type="checkbox" name="radius" class="rb" id="r_3" value="3" autocomplete="off" my-title="3">
+      3<input type="checkbox" name="radius" class="illuminated animated" id="r_3" value="3" autocomplete="off" my-title="3">
     </td>
   </tr>
 
