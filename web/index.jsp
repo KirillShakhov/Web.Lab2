@@ -68,19 +68,19 @@
   <tr>
     <td rowspan="2">Выберите R:</td>
     <td >
-      1<input type="checkbox" name="radius" autocomplete="off" class="illuminated animated" id="r_1" value="1" my-title="1">
+      1<input type="checkbox" name="radius" autocomplete="off" class="rb" id="r_1" value="1" my-title="1">
     </td>
     <td>
-      1.5<input type="checkbox" name="radius" class="illuminated animated" autocomplete="off" id="r_1_5" value="1.5" my-title="1.5">
+      1.5<input type="checkbox" name="radius" class="rb" autocomplete="off" id="r_1_5" value="1.5" my-title="1.5">
     <td>
-      2<input type="checkbox" name="radius" class="illuminated animated" id="r_2" autocomplete="off" value="2" my-title="2">
+      2<input type="checkbox" name="radius" class="rb" id="r_2" autocomplete="off" value="2" my-title="2">
     </td>
   </tr>
   <tr>
     <td>
-      2.5<input type="checkbox" name="radius" class="illuminated animated" id="r_2_5" value="2.5" autocomplete="off" my-title="2.5">
+      2.5<input type="checkbox" name="radius" class="rb" id="r_2_5" value="2.5" autocomplete="off" my-title="2.5">
     <td>
-      3<input type="checkbox" name="radius" class="illuminated animated" id="r_3" value="3" autocomplete="off" my-title="3">
+      3<input type="checkbox" name="radius" class="rb" id="r_3" value="3" autocomplete="off" my-title="3">
     </td>
   </tr>
 
