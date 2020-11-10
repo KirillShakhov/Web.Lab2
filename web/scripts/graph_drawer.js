@@ -8,10 +8,11 @@ document.addEventListener("DOMContentLoaded", () => {
             let position = getMousePosition(svg, event);
             x = position.x;
             y = position.y;
-            setPointer(x, y);
+            setPointer(position.x_draw, position.y_draw);
             let k = 270 / r; //отношение радиуса и плоскости
             x = (x / k).toFixed(1);
             y = (y / k).toFixed(1);
+
             sendRequest("svg");
         }
     });
@@ -20,8 +21,10 @@ document.addEventListener("DOMContentLoaded", () => {
 function getMousePosition(svg, event) {
     let rect = svg.getBoundingClientRect();
     return {
-        x: event.clientX - rect.left,
-        y: event.clientY - rect.top
+        x: event.clientX - (rect.left+150),
+        y: (event.clientY - (rect.top+150))*-1,
+        x_draw: event.clientX - rect.left,
+        y_draw: event.clientY - rect.top
     };
 }
 

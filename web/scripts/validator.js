@@ -30,7 +30,7 @@ function sendRequest(key) {
     const keys = ["button", "svg"];
     if (keys.includes(key)) {
         let request = "x=" + encodeURIComponent(x) + "&y=" + encodeURIComponent(y) + "&r=" + encodeURIComponent(r) +
-            "&key=" + encodeURIComponent(key) + "&hit=" + true;
+                "&key=" + encodeURIComponent(key);
         // fetch("app", {
         //     method: "GET",
         //     headers: {"Content-Type": "application/x-www-form-urlencoded; charset=UTF-8"},
