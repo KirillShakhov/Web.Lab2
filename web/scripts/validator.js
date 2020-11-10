@@ -81,7 +81,14 @@ function validateY() {
 
 function validateR() {
     try {
-        r = document.querySelector("input[type=radio]:checked").value;
+        //r = document.querySelector("input[type=radio]:checked").value;
+        let checked = document.getElementsByClassName('rb');
+        r = 0;
+        for (let el = 0; checked[el]; el++) {
+            if (checked[el].checked) {
+                r += Number(checked[el].value);
+            }
+        }
         return true;
     } catch (err) {
         createNotification("Значение R не выбрано");
