@@ -97,7 +97,7 @@ function validateR() {
             r += Number(checked[el].value);
         }
     }
-    if(!(r>0 & r < 15)){
+    if(!(r>0 & r <= 15)){
         createNotification("Значение R не выбрано");
         return false
 
