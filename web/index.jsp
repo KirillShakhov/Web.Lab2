@@ -66,23 +66,32 @@
     <td colspan="3"><input required name="Y-input" class="illuminated animated" type="text" placeholder="значение в промежутке (-5 до 3)" maxlength="6"></td>
   </tr>
   <tr>
-    <td rowspan="2">Выберите R:</td>
+    <td rowspan="2">Выберите R: <br> Если выбрать несколько, <br> вы получите сумму...</td>
+    <br>
+
     <td >
+      <h3></h3>
       1<input type="checkbox" name="radius" autocomplete="off" class="rb" id="r_1" value="1" my-title="1">
     </td>
+
     <td>
+      +
       2<input type="checkbox" name="radius" class="rb" autocomplete="off" id="r_2" value="2" my-title="2">
     <td>
+     +
       3<input type="checkbox" name="radius" class="rb" id="r_3" autocomplete="off" value="3" my-title="3">
     </td>
   </tr>
   <tr>
     <td>
+      +
       4<input type="checkbox" name="radius" class="rb" id="r_4" value="4" autocomplete="off" my-title="4">
     <td>
+    +
       5<input type="checkbox" name="radius" class="rb" id="r_5" value="5" autocomplete="off" my-title="5">
     </td>
   </tr>
+
 
 
 
