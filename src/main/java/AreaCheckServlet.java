@@ -10,7 +10,7 @@ public class AreaCheckServlet extends HttpServlet {
     private PointsTableBean bean;
 
     @Override
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         HttpSession session = req.getSession();
         resp.setContentType("text/html;charset=UTF-8");
         List<String> tableRows = (List) session.getAttribute("tableRows");
