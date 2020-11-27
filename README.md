@@ -1,7 +1,7 @@
 # Web.Lab2
 Variant 282301
 
-![pic](https://github.com/KirillShakhov/Web.Lab2/blob/main/img/pic.jpeg)
+![pic](https://github.com/KirillShakhov/Web.Lab2/blob/2838/img/pic.png)
 
 **Разработать веб-приложение на базе сервлетов и JSP, определяющее попадание точки на координатной плоскости в заданную область.**
 ____
