@@ -86,10 +86,9 @@ figure img {
 
 /*.animated:hover {transform: scale(1.05)}*/
 
-/*.illuminated:hover, .illuminated:focus {*/
-/*    box-shadow: 0 0 40px 5px #f41c52;*/
-/*    outline: none; !*убирает рамку фокуса в chrome*!*/
-/*}*/
+.illuminated:hover, .illuminated:focus {
+    outline: none; /*убирает рамку фокуса в chrome*/
+}
 
 hr {
     color: #f41c52;
@@ -125,5 +124,4 @@ hr {
 #outputTable * {
     padding: 25px;
 }
-
 

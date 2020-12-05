@@ -4,13 +4,30 @@ let x, y, r;
 
 //Обновляет значение x в соответсвии с нажатой кнопкой, добавляет ей эффекты (подсветка и увеличение), убирая их для остальных кнопок группы.
 document.addEventListener("DOMContentLoaded", () => {
-    let buttons = document.querySelectorAll("input[name=X-button]");
-    buttons.forEach(click);
-
+    let Y_buttons = document.querySelectorAll("input[name=Y-button]");
+    Y_buttons.forEach(click);
     function click(element) {
         element.onclick = function () {
-            x = this.value;
-            buttons.forEach(function (element) {
+            y = this.value;
+            Y_buttons.forEach(function (element) {
+                element.style.boxShadow = null;
+                element.style.backgroundColor = null;
+                element.style.color = null;
+            });
+            this.style.backgroundColor = "#f41c52";
+            this.style.color = "white";
+        }
+    }
+});
+
+//Обновляет значение x в соответсвии с нажатой кнопкой, добавляет ей эффекты (подсветка и увеличение), убирая их для остальных кнопок группы.
+document.addEventListener("DOMContentLoaded", () => {
+    let R_buttons = document.querySelectorAll("input[name=R-button]");
+    R_buttons.forEach(click);
+    function click(element) {
+        element.onclick = function () {
+            r = this.value;
+            R_buttons.forEach(function (element) {
                 element.style.boxShadow = null;
                 element.style.backgroundColor = null;
                 element.style.color = null;
@@ -32,22 +49,12 @@ function sendRequest(key) {
         let request = "x=" + encodeURIComponent(x) + "&y=" + encodeURIComponent(y) + "&r=" + encodeURIComponent(r) +
                 "&key=" + encodeURIComponent(key);
         fetch("app", {
-            method: "GET",
+            method: "POST",
             headers: {"Content-Type": "application/x-www-form-urlencoded; charset=UTF-8"},
             body: request
         }).then(response => response.text()).then(function (serverAnswer) {
             document.getElementById("outputContainer").innerHTML = serverAnswer;
         }).catch(err => createNotification(`Ошибка HTTP ${err.textContent}. Повторите попытку позже.`));
-
-
-        // fetch("./app?x=" + encodeURI(x) + "&y=" + encodeURI(y) + "&r=" + encodeURI(r) + "&key=" + encodeURI(key), {
-        //     method: 'GET',
-        //     headers: {
-        //         'Content-Type': 'text/plain;charset=UTF-8'
-        //     }
-        // }).then(response => response.text()).then(function (serverAnswer) {
-        //     document.getElementById("outputContainer").innerHTML = serverAnswer;
-        // }).catch(err => createNotification(`Ошибка HTTP ${err.textContent}. Повторите попытку позже.`));
     } else throw new Error("Не указан ключ отправки");
 }
 
@@ -67,43 +74,48 @@ function createNotification(message) {
 }
 
 function validateX() {
-    if (isNumeric(x)) return true;
-    else {
-        createNotification("x не выбран");
+    x = document.querySelector("input[name=X-input]").value.replace(",", "."); //замена разделителя дробной части числа
+    if (x === undefined) {
+        createNotification("x не введён");
         return false;
-    }
-}
-
-function validateY() {
-    y = document.querySelector("input[name=Y-input]").value.replace(",", "."); //замена разделителя дробной части числа
-    if (y === undefined) {
-        createNotification("y не введён");
+    } else if (!isNumeric(x)) {
+        createNotification("x не число");
         return false;
-    } else if (!isNumeric(y)) {
-        createNotification("y не число");
-        return false;
-    } else if (!((y > -3) && (y < 5))) {
+    } else if (!((x > -5) && (x < 5))) {
         createNotification("y не входит в область допустимых значений");
         return false;
     } else return true;
 }
 
-function validateR() {
-    //r = document.querySelector("input[type=radio]:checked").value;
-    let checked = document.getElementsByClassName('rb');
-    r = 0;
-    for (let el = 0; checked[el]; el++) {
-        if (checked[el].checked) {
-            r += Number(checked[el].value);
-        }
+function validateY() {
+    if (isNumeric(y)) return true;
+    else {
+        createNotification("y не выбран");
+        return false;
     }
-    if(r<=0 || r > 15){
-        createNotification("Значение R не выбрано");
-        return false
+}
 
-    }
-    else{
-        return true;
+function validateR() {
+    // //r = document.querySelector("input[type=radio]:checked").value;
+    // let checked = document.getElementsByClassName('rb');
+    // r = 0;
+    // for (let el = 0; checked[el]; el++) {
+    //     if (checked[el].checked) {
+    //         r += Number(checked[el].value);
+    //     }
+    // }
+    // if(r<=0 || r > 15){
+    //     createNotification("Значение R не выбрано");
+    //     return false
+    //
+    // }
+    // else{
+    //     return true;
+    // }
+    if (isNumeric(r)) return true;
+    else {
+        createNotification("r не выбран");
+        return false;
     }
 }
 

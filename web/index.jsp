@@ -8,21 +8,59 @@
   <title>Лабораторная №2</title>
 </head>
 <body>
+
+
 <header class="header">
   <h1>Веб-программирование, Лаб. 2, Вариант 282301</h1>
   <h2 align="left">Шахов Кирилл Андревич(back)</h2>
   <h2>Федоров Никита Сергеевич(front)</h2>
 </header>
+
+
 <table id="mainTable" class="shaded">
+
+
   <thead><td colspan="5"><h3>Валидация введённых значений:</h3></td></thead>
+
+
   <tbody>
   <tr><td colspan="5"><hr></td></tr>
+
+
+
+
   <tr>
-    <td rowspan="3">Выберите X:</td>
-    <td><input name="X-button" class="illuminated animated" type="button" value="-2.0"></td>
-    <td><input name="X-button" class="illuminated animated" type="button" value="-1.5"></td>
-    <td><input name="X-button" class="illuminated animated" type="button" value="-1.0"></td>
-    <td rowspan="6">
+    <td>Выберите X:</td>
+    <td><input required name="X-input" class="illuminated" type="text" placeholder="значение в промежутке (-5 до 3)" maxlength="6"></td>
+  </tr>
+  <tr>
+    <td>Введите Y:</td>
+    <td><input name="Y-button" class="illuminated" type="button" value="-3"></td>
+    <td><input name="Y-button" class="illuminated" type="button" value="-2"></td>
+    <td><input name="Y-button" class="illuminated" type="button" value="-1"></td>
+    <td><input name="Y-button" class="illuminated" type="button" value="0"></td>
+    <td><input name="Y-button" class="illuminated" type="button" value="1"></td>
+    <td><input name="Y-button" class="illuminated" type="button" value="2"></td>
+    <td><input name="Y-button" class="illuminated" type="button" value="3"></td>
+    <td><input name="Y-button" class="illuminated" type="button" value="4"></td>
+    <td><input name="Y-button" class="illuminated" type="button" value="5"></td>
+  </tr>
+
+  <tr>
+    <td>Введите R:</td>
+    <td><input name="R-button" class="illuminated" type="button" value="1"></td>
+    <td><input name="R-button" class="illuminated" type="button" value="2"></td>
+    <td><input name="R-button" class="illuminated" type="button" value="3"></td>
+    <td><input name="R-button" class="illuminated" type="button" value="4"></td>
+    <td><input name="R-button" class="illuminated" type="button" value="5"></td>
+  </tr>
+
+
+
+
+
+  <tr>
+    <td>
       <svg xmlns="http://www.w3.org/2000/svg" width="300" height="300">
         <line x1="0" y1="150" x2="300" y2="150" stroke="#000720"></line>
         <line x1="150" y1="0" x2="150" y2="300" stroke="#000720"></line>
@@ -51,48 +89,6 @@
       </svg>
     </td>
   </tr>
-  <tr>
-    <td><input name="X-button" class="illuminated animated" type="button" value="-0.5"></td>
-    <td><input name="X-button" class="illuminated animated" type="button" value="0"></td>
-    <td><input name="X-button" class="illuminated animated" type="button" value="0.5"></td>
-  </tr>
-  <tr>
-    <td><input name="X-button" class="illuminated animated" type="button" value="1"></td>
-    <td><input name="X-button" class="illuminated animated" type="button" value="1.5"></td>
-    <td><input name="X-button" class="illuminated animated" type="button" value="2"></td>
-  </tr>
-  <tr>
-    <td>Введите Y:</td>
-    <td colspan="3"><input required name="Y-input" class="illuminated animated" type="text" placeholder="значение в промежутке (-5 до 3)" maxlength="6"></td>
-  </tr>
-  <tr>
-    <td rowspan="2">Выберите R: <br> Если выбрать несколько, <br> вы получите сумму...</td>
-    <br>
-
-    <td >
-      <h3></h3>
-      1<input type="checkbox" name="radius" autocomplete="off" class="rb" id="r_1" value="1" my-title="1">
-    </td>
-
-    <td>
-      +
-      2<input type="checkbox" name="radius" class="rb" autocomplete="off" id="r_2" value="2" my-title="2">
-    <td>
-     +
-      3<input type="checkbox" name="radius" class="rb" id="r_3" autocomplete="off" value="3" my-title="3">
-    </td>
-  </tr>
-  <tr>
-    <td>
-      +
-      4<input type="checkbox" name="radius" class="rb" id="r_4" value="4" autocomplete="off" my-title="4">
-    <td>
-    +
-      5<input type="checkbox" name="radius" class="rb" id="r_5" value="5" autocomplete="off" my-title="5">
-    </td>
-  </tr>
-
-
 
 
 
