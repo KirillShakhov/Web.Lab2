@@ -3,9 +3,9 @@ Variant 282301
 
 * ✅POST
 * ⛔Bean
-* ⛔Формула & Валидация
+* ✅Формула & Валидация
 * ⛔График
-* ⛔Форма HTML
+* ✅Форма HTML
 
 ![pic](https://github.com/KirillShakhov/Web.Lab2/blob/2838/img/pic.png)
 
