@@ -12,7 +12,7 @@
     <header>
         <p class="studentName">Сухняк Данила Дмитриевич</p>
         <p class="groupNumber">Группа P3232</p>
-        <p class="optionNumber">Вариант 2816</p>
+        <p class="optionNumber">Вариант 2838</p>
     </header>
     <div class="content">
         <svg xmlns="http://www.w3.org/2000/svg" width="300" height="300">
