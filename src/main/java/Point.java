@@ -15,7 +15,7 @@ public class Point implements Serializable {
     }
 
     private boolean checkCoordinates(double x, double y, double r) {
-        return  (((x <= 0) && (x >= -r/2) && (y >= 0) && (y <= r)) && (y<=x-r/2) || //треугольник
+        return  (((x <= 0) && (x >= -r/2) && (y >= 0) && (y <= r)) && (y <= 2*x + r) || //треугольник
                 ((x >= 0) && (x <= r) && (y <= 0) && (y >= -r/2)) || //квадрат
                 ((Math.pow(x, 2) + Math.pow(y, 2)) <= ((Math.pow(r/2, 2))) && (x >= 0) && (y >= 0))); //круг
     }
