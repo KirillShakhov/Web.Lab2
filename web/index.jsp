@@ -2,14 +2,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Table</title>
-    <link href="stylesheets/main_page.css" rel="stylesheet">
-    <link href="stylesheets/check_button.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <title>Lab2</title>
+    <link rel="stylesheet" href="stylesheets/style.css">
     <!-- import jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <!-- import js -->
-    <script src="functions.js"></script>
     <link rel="icon" type="image/jpg" href="images/favicon.jpg">
 </head>
 <body>
@@ -96,7 +92,6 @@
 
     </div>
     <script src="scripts/validator.js"></script>
-    <script src="scripts/easter_egg.js"></script>
     <script src="scripts/graph_drawer.js"></script>
 </body>
 </html>

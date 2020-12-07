@@ -1,8 +1,0 @@
-#checkButton:active::after {
-    padding: 0;
-    margin: 0;
-    opacity: 1;
-    transition: 0s
-}
-
-#checkButton:focus {outline: 0}
