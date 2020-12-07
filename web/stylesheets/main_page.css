@@ -26,7 +26,6 @@ header, footer {
     color: black;
     background-color: #6efce4;
     left: 0;
-    border-radius: 5%;
 }
 
 thead * {margin-top: 4%}
@@ -37,13 +36,11 @@ thead * {margin-top: 4%}
     background-color: #6efce4;
     width: 75%;
     margin: 80px auto;
-    border-radius: 5%;
 }
 
 input, svg {
     width: 100%;
     border: 2px solid black;
-    border-radius: 20px;
     background-color: white;
 }
 
@@ -65,7 +62,6 @@ figure img {
 #checkButton {
     background-color: #d4fff9;
     font-size: 24px;
-    border-radius: 25%;
 }
 #credit > img {
     width: 40px;
@@ -101,7 +97,6 @@ hr {
 }
 
 .outputStub {background-color: #d4fff9;
-    border-radius: 15%;
 }
 
 .errorStub {background-color: #dc143b
@@ -118,7 +113,6 @@ hr {
 #outputTable th {
     background-color: #6efce4;
     color: black;
-    border-radius: 15%;
 }
 
 #outputTable * {
