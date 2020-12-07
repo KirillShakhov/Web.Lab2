@@ -60,7 +60,7 @@ table {
     border-spacing: 5px;
     background: #ECE9E0;
     color: #656665;
-    border: 16px solid #ECE9E0;
+    border: 16px solid #dc143b;
     border-radius: 20px;
     margin: 0 auto;
 }
@@ -76,7 +76,7 @@ th {
 }
 
 #mainTable {
-    background-color: #6efce4;
+    background-color: #F5D7BF;
     width: 75%;
     margin: 80px auto;
 }
@@ -102,7 +102,7 @@ th {
     font-weight: normal;
 }
 
-body {background-color: #d4fff9;}
+body {background-color: #F5D7BF;}
 
 
 footer {bottom: 0}
@@ -113,7 +113,7 @@ thead * {margin-top: 4%}
 /*tfoot * {margin-bottom: 4% !important} !*чтобы при скроллинге оставался отступ*!*/
 
 #mainTable {
-    background-color: #6efce4;
+    background-color: #F5D7BF;
     width: 75%;
     margin: 80px auto;
 }
@@ -140,7 +140,7 @@ figure img {
 }
 
 #checkButton {
-    background-color: #d4fff9;
+    background-color: #F5D7BF;
     font-size: 24px;
 }
 #credit > img {
@@ -168,7 +168,7 @@ hr {
     padding: 1%;
 }
 
-.outputStub {background-color: #d4fff9;
+.outputStub {background-color: #F5D7BF;
 }
 
 .errorStub {background-color: #dc143b
@@ -179,11 +179,11 @@ hr {
     border-collapse: collapse;
     margin: auto;
     width: 90%;
-    background-color: #d4fff9;
+    background-color: #F5D7BF;
 }
 
 #outputTable th {
-    background-color: #6efce4;
+    background-color: #F5D7BF;
     color: black;
 }
 

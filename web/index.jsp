@@ -61,7 +61,6 @@
 
             <div class="insideForm r">
                 <label>Введите R:</label>
-                <input type="text" id="inputR" placeholder="1..4" name="r">
                 <input name="R-button" class="illuminated" type="button" value="1">
                 <input name="R-button" class="illuminated" type="button" value="2">
                 <input name="R-button" class="illuminated" type="button" value="3">
