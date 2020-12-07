@@ -90,6 +90,16 @@
         </table>
 
     </div>
+    <script>
+        let request = "x=0" + "&y=0" + "&r=0" + "&key=update";
+        fetch("app", {
+            method: "POST",
+            headers: {"Content-Type": "application/x-www-form-urlencoded; charset=UTF-8"},
+            body: request
+        }).then(response => response.text()).then(function (serverAnswer) {
+            document.getElementById("outputContainer").innerHTML = serverAnswer;
+        }).catch(err => createNotification(`Ошибка HTTP ${err.textContent}. Повторите попытку позже.`));
+    </script>
     <script src="scripts/validator.js"></script>
     <script src="scripts/graph_drawer.js"></script>
 </body>

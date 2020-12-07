@@ -96,22 +96,6 @@ function validateY() {
 }
 
 function validateR() {
-    // //r = document.querySelector("input[type=radio]:checked").value;
-    // let checked = document.getElementsByClassName('rb');
-    // r = 0;
-    // for (let el = 0; checked[el]; el++) {
-    //     if (checked[el].checked) {
-    //         r += Number(checked[el].value);
-    //     }
-    // }
-    // if(r<=0 || r > 15){
-    //     createNotification("Значение R не выбрано");
-    //     return false
-    //
-    // }
-    // else{
-    //     return true;
-    // }
     if (isNumeric(r)) return true;
     else {
         createNotification("r не выбран");

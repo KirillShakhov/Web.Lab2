@@ -13,11 +13,47 @@ public class AreaCheckServlet extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         HttpSession session = req.getSession();
         resp.setContentType("text/html;charset=UTF-8");
+        if(req.getParameter("key").equals("update")){
+            updateTable(req, resp);
+        }else {
+            List<String> tableRows = (List) session.getAttribute("tableRows");
+
+            bean = (PointsTableBean) req.getSession().getAttribute("pointsBean");
+
+
+            if (tableRows == null) {
+                tableRows = new ArrayList<String>();
+                session.setAttribute("tableRows", tableRows);
+                tableRows.add("<table id='outputTable'><tr>" +
+                        "<th>x</th>" +
+                        "<th>y</th>" +
+                        "<th>r</th>" +
+                        "<th>Точка входит в ОДЗ</th>" +
+                        "<th>Текущее время</th></tr>");
+            }
+            double x = Double.parseDouble(req.getParameter("x"));
+            double y = Double.parseDouble(req.getParameter("y"));
+            double r = Double.parseDouble(req.getParameter("r"));
+            String key = req.getParameter("key");
+
+
+            PrintWriter writer = resp.getWriter();
+            try {
+                if (checkData(x, y, r, key)) {
+                    tableRows.add(new Point(x, y, r).toString());
+//                Point p = new Point(x, y, r);
+//                bean.addPoint(p);
+                    for (String tableRow : tableRows) writer.println(tableRow);
+                } else resp.sendError(HttpServletResponse.SC_BAD_REQUEST);
+            } finally {
+                if (writer != null) writer.close();
+            }
+        }
+    }
+
+    private void updateTable(HttpServletRequest req, HttpServletResponse resp) throws IOException {
+        HttpSession session = req.getSession();
         List<String> tableRows = (List) session.getAttribute("tableRows");
-
-        bean = (PointsTableBean) req.getSession().getAttribute("pointsBean");
-
-
         if (tableRows == null) {
             tableRows = new ArrayList<String>();
             session.setAttribute("tableRows", tableRows);
@@ -28,20 +64,9 @@ public class AreaCheckServlet extends HttpServlet {
                     "<th>Точка входит в ОДЗ</th>" +
                     "<th>Текущее время</th></tr>");
         }
-        double x = Double.parseDouble(req.getParameter("x"));
-        double y = Double.parseDouble(req.getParameter("y"));
-        double r = Double.parseDouble(req.getParameter("r"));
-        String key = req.getParameter("key");
-
-
         PrintWriter writer = resp.getWriter();
         try {
-            if (checkData(x, y, r, key)) {
-                tableRows.add(new Point(x, y, r).toString());
-//                Point p = new Point(x, y, r);
-//                bean.addPoint(p);
-                for (String tableRow: tableRows) writer.println(tableRow);
-            } else resp.sendError(HttpServletResponse.SC_BAD_REQUEST);
+            for (String tableRow: tableRows) writer.println(tableRow);
         } finally {
             if (writer != null) writer.close();
         }
