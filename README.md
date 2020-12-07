@@ -4,7 +4,7 @@ Variant 282301
 * ✅POST
 * ⛔Bean
 * ✅Формула & Валидация
-* ⛔График
+* ✅График
 * ✅Форма HTML
 
 ![pic](https://github.com/KirillShakhov/Web.Lab2/blob/2838/img/pic.png)
