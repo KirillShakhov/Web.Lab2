@@ -47,6 +47,35 @@ public class AreaCheckServlet extends HttpServlet {
         }
     }
 
+    @Override
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        resp.setContentType("text/html;charset=UTF-8");
+        if(req.getParameter("key").equals("update")){
+            updateTable(req, resp);
+        }
+    }
+
+    private void updateTable(HttpServletRequest req, HttpServletResponse resp) throws IOException {
+        HttpSession session = req.getSession();
+        List<String> tableRows = (List) session.getAttribute("tableRows");
+        if (tableRows == null) {
+            tableRows = new ArrayList<String>();
+            session.setAttribute("tableRows", tableRows);
+            tableRows.add("<table id='outputTable'><tr>" +
+                    "<th>x</th>" +
+                    "<th>y</th>" +
+                    "<th>r</th>" +
+                    "<th>Точка входит в ОДЗ</th>" +
+                    "<th>Текущее время</th></tr>");
+        }
+        PrintWriter writer = resp.getWriter();
+        try {
+            for (String tableRow: tableRows) writer.println(tableRow);
+        } finally {
+            if (writer != null) writer.close();
+        }
+    }
+
     private boolean checkData(double x, double y, double r, String key) {
         Double[] xInterval = {-2.0, -1.5, -1.0, -0.5, 0.0, 0.5, 1.0, 1.5, 2.0};
         if (key.equals("button"))

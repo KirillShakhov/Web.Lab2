@@ -16,7 +16,12 @@ public class ControllerServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        req.getServletContext().getNamedDispatcher("Controller").forward(req, resp);
+        if (req.getParameter("key").equals("update")) {
+            getServletContext().getNamedDispatcher("AreaChecker").forward(req, resp);
+        }
+        else{
+            req.getServletContext().getNamedDispatcher("Controller").forward(req, resp);
+        }
     }
 
     @Override
