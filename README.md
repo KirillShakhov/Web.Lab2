@@ -1,5 +1,8 @@
 # Web.Lab2
 
+[![GitHub stars][stars-shield]][stars-url]
+[![GitHub issues][issues-shield]][issues-url]
+[![GitHub][license-shield]][license-url]
 ![GitHub repo size](https://img.shields.io/github/repo-size/KirillShakhov/Web.Lab2)
 ![GitHub last commit](https://img.shields.io/github/last-commit/KirillShakhov/Web.Lab2)
 
@@ -95,3 +98,10 @@ Using port 41423 for JAVA_DEBUGGER.
 Другие команды:
 `$ asadmin stop-domain --domaindir ~/glass lab2` - остановить домен
 `$ asadmin delete-domain --domaindir ~/glass lab2` - удалить домен
+
+[stars-shield]: https://img.shields.io/github/stars/KirillShakhov/Web.Lab2?style=social
+[stars-url]: https://github.com/KirillShakhov/Web.Lab2/stargazers
+[issues-shield]: https://img.shields.io/github/issues/KirillShakhov/Web.Lab2
+[issues-url]: https://github.com/KirillShakhov/Web.Lab2/issues
+[license-shield]: https://img.shields.io/github/license/KirillShakhov/Web.Lab2
+[license-url]: https://github.com/KirillShakhov/Web.Lab2/blob/master/LICENSE
