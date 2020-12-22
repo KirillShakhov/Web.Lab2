@@ -1,8 +1,5 @@
 # Web.Lab2
 
-[![GitHub stars][stars-shield]][stars-url]
-[![GitHub issues][issues-shield]][issues-url]
-[![GitHub][license-shield]][license-url]
 ![GitHub repo size](https://img.shields.io/github/repo-size/KirillShakhov/Web.Lab2)
 ![GitHub last commit](https://img.shields.io/github/last-commit/KirillShakhov/Web.Lab2)
 
